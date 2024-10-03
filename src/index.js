@@ -7,7 +7,11 @@ const el=  document.getElementById('root');
 const root = ReactDOM.createRoot(el);
 //4 > create a component
 function App(){
-    return <h1>Hi there here</h1>;
+    let message = 'Hi there';
+    if(Math.random()> .5){
+        message = 'by there'
+    }
+    return <h1>{message}</h1>;
 }
 //5 > show the component
 root.render(<App />);
